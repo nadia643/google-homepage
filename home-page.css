@@ -2,15 +2,39 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-li {
-    display: block;
-}
-button2 {
+    overflow: hidden;
+  }
+  footer-container {
+      align-items: flex-end;
+  }
+  
+  left-container {
+      display: flex;
+      float: left;
+  }
+  right-container {
+    display: flex;
+      float: right;
+  }
+  
+  li a {
+    display: flex;
+    color: black;
     text-align: center;
-}
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+
 button {
-    text-align: center;
-    border: none;
-    background: none;
+    display: inline;
+    text-align: center; 
+}
+searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 245px;
+    padding: 245px;
 }
