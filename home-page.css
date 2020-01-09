@@ -1,40 +1,33 @@
+.searchBox {
+    text-align: center;
+    justify-content: center;
+    padding-top: 300px;
+}
+footer {
+    background-color: lightgray;
+    text-decoration: none;
+}
+.left-container {
+    float: left;
+}
+
+.right-container {
+    float: right;
+}
+li a {
+    text-decoration: none;
+        text-align: center;
+    justify-content: center;
+}
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  footer-container {
-      align-items: flex-end;
-  }
-  
-  left-container {
-      display: flex;
-      float: left;
-  }
-  right-container {
-    display: flex;
-      float: right;
-  }
-  
-  li a {
-    display: flex;
-    color: black;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
-  
-
-button {
-    display: inline;
-    text-align: center; 
-}
-searchBox {
-    display: flex;
+        text-align: center;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 245px;
-    padding: 245px;
 }
+left-header {
+    float: left;
+}
+right-header {
+    float: right;
+}
+
