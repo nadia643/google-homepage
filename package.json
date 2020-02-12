@@ -1,0 +1,19 @@
+{
+  "name": "google-homepage",
+  "version": "1.0.0",
+  "description": "This project aims to re-create the Google homepage using html and css",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/home-page.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadia643/google-homepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadia643/google-homepage/issues"
+  },
+  "homepage": "https://github.com/nadia643/google-homepage#readme"
+}
