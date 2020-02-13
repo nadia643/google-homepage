@@ -1,3 +1,6 @@
+$mainBlack: #000;
+$hoverGray: rgb(224, 224, 222);
+
 body {
     font-family: arial;
 }
@@ -5,11 +8,30 @@ body {
     text-align: center;
     justify-content: center;
     padding-top: 300px;
+
 }
+.search-form {
+    border: 1px solid $hoverGray;
+    border-radius: 5em;
+    width: 25%;
+    height: 2.5rem;
+
+
+    // &:hover {
+    // transition: all .2s;
+    // transform: scale(1.005);
+    // cursor: auto;
+    // box-shadow: 2px 2px 2px 2px rgba($hoverGray, .4);
+    // }
+
+}
+
+
 input {
     margin-bottom: 15px;
     width: 400px;
 }
+
 a {
     text-decoration: none;
     text-align: center;
@@ -19,7 +41,7 @@ a {
 
 .footer {
     background:#f2f2f2;
-    font: black;
+    font: $mainBlack;
     padding:5px;
     bottom:0;
     position:fixed;
@@ -27,29 +49,35 @@ a {
     left:-5px;
 }
 
-.left-container {
-    float: left;
-}
-
-.right-container {
-    float: right;
+.container {
+    color: $mainBlack;
+    &-left {
+        float: left;
+    }
+    &-right {
+        float: right;
+    }
 }
 .navbar {
-    font: black;
+    font: $mainBlack;
     padding:2px;
     top:0;
     position:fixed;
     width:100%;
     left:-5px;
 }
-.left-header {
-    float: left;
+.header {
+    &-left {
+        float: left;
+    }
+    &-right {
+        float: right;
+    }
 }
-.right-header {
-    float: right;
-}
+
 #searchForm img {
     height: 20px;
     width: 15px;
-    margin-right: 10px:
-  }
+    margin-right: 10px;
+}
+
