@@ -1,5 +1,6 @@
 $mainBlack: #000;
-$hoverGray: rgb(224, 224, 222);
+$hoverGray: #f2f2f2;
+$button-footer-font-grey: rgb(105, 103, 102);
 
 body {
     font-family: arial;
@@ -10,22 +11,26 @@ body {
     padding-top: 300px;
 
 }
-.search-form {
+
+.input-area {
     border: 1px solid $hoverGray;
     border-radius: 5em;
-    width: 25%;
+    width: 30%;
     height: 2.5rem;
 
 
-    // &:hover {
-    // transition: all .2s;
-    // transform: scale(1.005);
-    // cursor: auto;
-    // box-shadow: 2px 2px 2px 2px rgba($hoverGray, .4);
-    // }
+    &:hover {
+    transition: all .2s;
+    transform: scale(1.005);
+    cursor: auto;
+    box-shadow: 2px 2px 2px 2px rgba($hoverGray, .4);
+    }
 
 }
 
+.icon {
+    opacity: 20%;
+}
 
 input {
     margin-bottom: 15px;
@@ -38,15 +43,34 @@ a {
     justify-content: center;
 }
 
+.button-itself {
+    background-color: $hoverGray;
+    border: none;
+    padding: 15px;
+    margin: 15px;    
+    text-align: center;
+    height: 3em;
+    width: 12em;
+    color: $button-footer-font-grey;
+}
 
 .footer {
-    background:#f2f2f2;
-    font: $mainBlack;
-    padding:5px;
+
+    &-lower {
+    background:$hoverGray;
+    // padding:5px;
     bottom:0;
     position:fixed;
     width:100%;
-    left:-5px;
+    height: 5%;
+    border-top-color: darken($hoverGray, 50%);
+
+}
+}
+.footer-word {
+    color: $button-footer-font-grey;
+    padding: 10px;
+    font-size: 0.8rem;
 }
 
 .container {
@@ -73,11 +97,5 @@ a {
     &-right {
         float: right;
     }
-}
-
-#searchForm img {
-    height: 20px;
-    width: 15px;
-    margin-right: 10px;
 }
 
