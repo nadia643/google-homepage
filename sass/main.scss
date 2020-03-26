@@ -1,5 +1,6 @@
 $mainBlack: #000;
 $hoverGray: #f2f2f2;
+$darkHoverGray: #f2f2f213;
 $button-footer-font-grey: rgb(105, 103, 102);
 
 body {
@@ -33,13 +34,14 @@ body {
     border-radius: 5em;
     width: 30%;
     height: 2.5rem;
+    padding-left: 20px;;
 
 
     &:hover {
-    transition: all .2s;
+    transition: all .05s;
     transform: scale(1.005);
     cursor: auto;
-    box-shadow: 2px 2px 2px 2px rgba($hoverGray, .4);
+    box-shadow: 2px 2px 2px 2px rgba($darkHoverGray, 0.89);
     }
 
 }
