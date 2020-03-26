@@ -9,24 +9,38 @@ body {
 
 .header-word {
     &-left{
-        color: $button-footer-font-grey;
+        color: $mainBlack;
         padding: 10px;
         font-size: 13px;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
     }
 
     &-right {
-        color: $button-footer-font-grey;
+        color: $mainBlack;
         float: right;
         padding: 10px;
         font-size: 13px;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
     }
 }
 
-.searchBox {
+.dot-icon {
+    float: right;
+    padding: 10px;
+}
+
+.search-box {
     text-align: center;
     justify-content: center;
     padding-top: 300px;
+}
 
+.icon {
+    opacity: 20%;
 }
 
 .input-area {
@@ -34,7 +48,7 @@ body {
     border-radius: 5em;
     width: 30%;
     height: 2.5rem;
-    padding-left: 20px;;
+    text-indent: 20px;;
 
 
     &:hover {
@@ -43,23 +57,9 @@ body {
     cursor: auto;
     box-shadow: 2px 2px 2px 2px rgba($darkHoverGray, 0.89);
     }
-
 }
 
-.icon {
-    opacity: 20%;
-}
 
-input {
-    margin-bottom: 15px;
-    width: 400px;
-}
-
-a {
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
-}
 
 .button-itself {
     background-color: $hoverGray;
@@ -99,12 +99,16 @@ a {
     color: $button-footer-font-grey;
     padding: 10px;
     font-size: 0.8rem;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
 
     &-uk {
         font-size: 0.9rem;
         color: $button-footer-font-grey;
     }
 }
+
 
 .container {
     color: $mainBlack;
